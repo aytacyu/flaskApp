@@ -18,5 +18,10 @@ def index():
     return render_template('index.html', text=['Welcome,...', 'Secondly,...', 'Also,...'], user=User("John", "Wick"))
 
 
+@app.route('/add')
+def add():
+    return render_template('add.html')
+
+
 if __name__ == '__main__':
     app.run(debug=True)
